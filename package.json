@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "NestJS MSA",
   "scripts": {
-    "start:dev": "nest start --watch"
+    "start:dev": "sh -c 'APP_NAME=$1 nest start --watch $1' --"
   },
   "dependencies": {
     "@nestjs/common": "11.1.0",
+    "@nestjs/config": "4.0.2",
     "@nestjs/core": "11.1.0",
     "@nestjs/platform-express": "11.1.0",
+    "env-var": "7.5.0",
     "ts-loader": "9.5.2"
   },
   "devDependencies": {
